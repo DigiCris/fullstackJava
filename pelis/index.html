@@ -1,0 +1,331 @@
+<!-- Falta que en version celular no cargue todas las pelis y pueda ir pasando carrusel igual que los comentarios-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        window.addEventListener('scroll', slideIn);
+
+        function slideIn() {
+        var slideElements = document.getElementsByClassName('slide-in');
+        for (var i = 0; i < slideElements.length; i++) {
+            var element = slideElements[i];
+            var position = element.getBoundingClientRect().top;
+            var windowHeight = window.innerHeight;
+
+            if (position < windowHeight) {
+            element.classList.add('active');
+            }
+        }
+        }
+    </script>
+</head>
+<body>
+
+    
+    <div class="container">
+
+
+        <div class="background-image" id="principio"></div>
+
+        <div class="foreground-content">
+            <div id="menu">
+                <img src="./download/hero.jpeg" alt="logo de cineflix" id="logo">
+                <div>
+                    <ul class="navar">
+                        <li><a href="#catalogo">Catalogo</a></li>
+                        <li><a href="#registrarse">Registrarse</a></li>
+                        <li><a href="./login.html">Iniciar Sesion</a></li>
+                    </ul>
+                </div>
+                <a href="#registrarse"><button class="--bs-yellow button-primary">Explora ahora</button></a>
+            </div>
+
+            <div class="separadorV"></div><div class="separadorV"></div><div class="separadorV"></div>
+        <h1 class="animate__animated animate__backInLeft">CineFlix Online</h1>
+        <p>¡Películas y series en un solo lugar! Disfruta donde quieras. Cancela en cualquier momento.</p>
+        <a href="#registrarse"><button>Registrate</button></a>
+        </div>
+ 
+        <div id="weare" class="white-backgrown">
+            <div class="separadorV"></div><div class="separadorV"></div>
+            <table class="slide-in">
+                <tr>
+                    <td class="bold">Bienvenido a CineFlix, tu destino favorito para el mejor entretenimieto cinematografico en linea.</td>
+                    <td>Sumergete en un mundo de emocionantes peliculas y series. Descubre nuevos títulos de tus clasicos favoritos. ¡La diversión nunca termina en CineFlix!</td>
+                </tr>
+            </table>
+            <div class="separadorV"></div><div class="separadorV"></div>
+            <table class="slide-in">
+                <tr>
+                    <td class="big-yellow bold animate__animated animate__backInLeft">¡Miles</td>
+                    <td class="big-yellow bold">¡Tendencias</td>
+                    <td class="big-yellow bold">¡Calidad</td>
+                </tr>
+                <tr>
+                    <td class="bold">de opciones!</td>
+                    <td class="bold">exclusivas!</td>
+                    <td class="bold">garantizada!</td>
+                </tr>
+            </table>
+            <div class="separadorV"></div>
+            <div class="separadorV"></div>
+            <div class="separadorV"></div>
+        </div>
+
+        <div class="white-backgrown" id="catalogo">
+            <h2 class="slide-in">Explora nuestro catalogo</h2>
+            <div class="separadorV"></div>
+            <form action="" method="post" id="busqueda" class="slide-in">
+                <input type="text" name="practece" id="busqueda-text" placeholder="🔍︎  ¿Que pelicula buscas?">
+                <input class="lupa" type="submit" value="">
+            </form>
+            <div class="separadorV"></div>
+            <div class="movie-container">
+                <img class="item slide-in" src="./download/hero.jpeg" alt="Pelicula 1">
+                <img class="item slide-in" src="./download/hero.jpeg" alt="Pelicula 1">
+                <img class="item slide-in" src="./download/hero.jpeg" alt="Pelicula 1">
+                <img class="item slide-in" src="./download/hero.jpeg" alt="Pelicula 1">
+                <img class="item slide-in" src="./download/hero.jpeg" alt="Pelicula 1">
+                <img class="item slide-in" src="./download/hero.jpeg" alt="Pelicula 1">
+                <img class="item slide-in" src="./download/hero.jpeg" alt="Pelicula 1">
+                <img class="item slide-in" src="./download/hero.jpeg" alt="Pelicula 1">
+                <img class="item slide-in" src="./download/hero.jpeg" alt="Pelicula 1">
+            </div>
+            <div class="separadorV"></div>
+            <div class="pagination slide-in">
+                <button class="--bs-yellow button-primary"><<</button>
+                <button class="--bs-yellow button-primary">>></button>                
+            </div>
+            <div class="separadorV"></div>
+            <div class="separadorV"></div>
+        </div>
+
+        <div class="white-backgrown">
+            <h2 class="slide-in">Testimonios</h2>
+            <div class="separadorV"></div>
+
+            <table>
+                <tr class="slide-in">
+                    <td class="big-yellow bold ">★★★★★</td>
+                    <td class="big-yellow bold">★★★★★</td>
+                    <td class="big-yellow bold">★★★★★</td>
+                </tr>
+                <tr class="slide-in">
+                    <td class="">Increible variedad de peliculas! Nunca me aburro. <br><span class="name">Pedro Perez</span></td>
+                    <td class="">La calidad de imagen es asombrosa!! Estoy en el cine. <br><span class="name">Natalia Dominguez</span></td>
+                    <td class="">El mejor servicio de streaming que he probado! <br><span class="name">Juan Pepegrillo</span></td>
+                </tr>
+            </table>
+            <div class="separadorV"></div>
+            <table>
+                <tr class="slide-in">
+                    <td class="big-yellow bold">★★★★★</td>
+                    <td class="big-yellow bold">★★★★★</td>
+                    <td class="big-yellow bold">★★★★★</td>
+                </tr>
+                <tr class="slide-in">
+                    <td class="">Que facil encuentro las peliculas que me gustan! <br><span class="name">Lucía Suarez</span></td>
+                    <td class="">Gracias por hacer mis noches más entretenidas! <br><span class="name">Vanesa Rumplestinski</span></td>
+                    <td class="">Increible atención al clientes! <br><span class="name">John Romanov</span></td>
+                </tr>
+            </table>
+            <div class="separadorV"></div>
+            <div class="separadorV"></div>
+        </div>
+
+
+
+
+
+
+
+        <div class="blue-backgrown">
+            <div class="separadorV"></div>
+            <div class="separadorV"></div>
+            <h2 class="slide-in">Planes de Suscripción</h2>
+            <div class="separadorV"></div>
+            <div class="separadorV"></div>
+
+            <div class="price-container slide-in">
+
+                <div class="card">
+                    <div class="top rosa">
+                        <h2>BASIC</h2>
+                        <hr>
+                        <p>El precio más económico.</p>
+                    </div>
+                    <div class="bottom">
+                        
+                        <div class="precio">
+                            <div class="moneda">$</div>
+                            <div class="cantidad">20</div>
+                            <div class="tiempo">/ mes</div>
+                        </div>
+                        <hr>
+        
+                        <ul class="caracteristicas">
+                            <li><span class="tick tick-rosa">✔</span> Streaming 24/7.</li>
+                            <li><span class="tick tick-rosa">X</span> Calidad 4K.</li>
+                            <li><span class="tick tick-rosa">X</span> Sugerencias por IA.</li>
+                        </ul>
+                        <button  class="rosa">Suscribirse</button>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="top azul">
+                        <h2>STANDARD</h2>
+                        <hr>
+                        <p>La mejor calidad/precio.</p>
+                    </div>
+                    <div class="bottom">
+                        
+                        <div class="precio">
+                            <div class="moneda">$</div>
+                            <div class="cantidad">35</div>
+                            <div class="tiempo">/ mes</div>
+                        </div>
+                        <hr>
+        
+                        <ul class="caracteristicas">
+                            <li><span class="tick tick-azul">✔</span> Streaming 24/7.</li>
+                            <li><span class="tick tick-azul">✔</span> Calidad 4K.</li>
+                            <li><span class="tick tick-azul">X</span> Sugerencias por IA.</li>
+                        </ul>
+                        <button class="azul">Suscribirse</button>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="top verde">
+                        <h2>PREMIUM</h2>
+                        <hr>
+                        <p>Para los mas demandantes.</p>
+                    </div>
+                    <div class="bottom">
+                        
+                        <div class="precio">
+                            <div class="moneda">$</div>
+                            <div class="cantidad">50</div>
+                            <div class="tiempo">/ mes</div>
+                        </div>
+                        <hr>
+        
+                        <ul class="caracteristicas">
+                            <li><span class="tick tick-verde">✔</span> Streaming 24/7.</li>
+                            <li><span class="tick tick-verde">✔</span> Calidad 4K.</li>
+                            <li><span class="tick tick-verde">✔</span> Sugerencias por IA.</li>
+                        </ul>
+                        <button  class="verde">Suscribirse</button>
+                    </div>
+                </div>
+            </div>
+            <div class="separadorV"></div>
+            <div class="separadorV"></div>
+            <div class="separadorV"></div>
+        </div>
+
+
+        <div class="blue-backgrown" style="display: flex; justify-content: center;">
+            <div id="banner-call-to-action" class="slide-in">
+                <p>¡Disfruta del mejor entretenimieto ahora!</p>
+                <button class="--bs-yellow button-primary" style="position: relative; top: 12px;">Explora</button>
+            </div>
+        </div>
+
+        <div class="blue-backgrown">
+            <div class="separadorV"></div>
+            <div class="separadorV-celular"></div>
+            <h2 class="slide-in">Preguntas frecuentes</h2>
+            <div class="separadorV"></div>
+
+            <div class="pregunta slide-in">¿Cómo ver peliculas online? <div class="arrow-down">↓</div></div>
+            <div class="respuesta slide-in">Simplemente registraste, eligela, pone play y a disfrutar!!!</div>
+            <div class="pregunta slide-in">¿Puedo caancelar en cualqueir momento? <div class="arrow-down">↓</div></div>
+            <div class="respuesta slide-in">Claro.Es tan simple como precionar el botón desuscribirse desde tu cuenta.</div>
+            <div class="pregunta slide-in">¿Como encuentro peliculas aclamadas? <div class="arrow-down">↓</div></div>
+            <div class="respuesta slide-in">Se le ofrecerá las mismas dentro de su cuenta.</div>
+            <div class="pregunta slide-in">¿Necesito registrarme para ver tendencia? <div class="arrow-down">↓</div></div>
+            <div class="respuesta slide-in">No es necesario, solo para ver las peliculas.</div>
+            <div class="pregunta slide-in">¿Cómo contacto al administrador de peliculas? <div class="arrow-down">↓</div></div>
+            <div class="respuesta slide-in">Mediante el formulario de contacto y será contactado a la brevedad pr un representante.</div>
+        </div>
+
+
+
+        <div class="blue-backgrown">
+            <div class="separadorV"></div>
+            <div class="separadorV"></div>
+            <h2 class="slide-in">Siguenos en redes sociales</h2>
+            <div class="separadorV"></div>
+            <div class="logos-redes slide-in">
+                <img src="download/instagram.png" alt="instagram">
+                <img src="download/facebook.png" alt="facebook">
+                <img src="download/gorjeo.png" alt="twitter">                
+            </div>
+
+        </div>
+
+
+
+        <div class="blue-backgrown" id="registrarse">
+            <div class="separadorV"></div>
+            <div class="separadorV"></div>
+            <h2 class="slide-in">Unete a la diversión</h2>
+            <div class="separadorV"></div>
+            <form action="" class="contact-form slide-in">   
+                <input type="email" name="email" id="" placeholder="Correo">    
+                <input type="password" name="password" id="" placeholder="Contraseña">  
+                <textarea name="" id="" cols="30" rows="5" placeholder="deje un mensaje opcional"></textarea>
+                <button  class="--bs-yellow button-primary">Registrarme</button>
+            </form>
+        </div>
+
+
+        <div class="blue-backgrown">
+            <div class="separadorV"></div>
+            <div class="separadorV"></div>
+            <h2 class="slide-in">Contacto Directo</h2>
+            <div class="separadorV"></div>
+            <div class="contact-info-box slide-in">
+                <div class="info-contacto">
+                    <p>Telefono: +1312193123</p>
+                    <p>WhatsApp: +1312193123</p>
+                    <p>Correo: info@cineflix.com</p>
+                    <p>Direccion: Gral. Paz, B1100.</p>
+                    <p>Horarios: Lu-Vi de 9am a 6pm</p>
+                </div>
+                <iframe class="map slide-in" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.1577078386617!2d-58.37728792514233!3d-34.67596896131598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd22006b1e21%3A0x3928913eccb65d72!2sNetflix%20Argentina!5e0!3m2!1ses!2sar!4v1712376815329!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="separadorV"></div>
+            <div class="separadorV"></div>
+        </div>
+
+
+
+
+        <footer>
+            <div class="separadorV"></div>
+            © 2024 cineflix. Peliculas en Linea, todos los derechos reservados.
+            <div class="separadorV"></div>
+        </footer>
+
+
+
+        <div class="goUp">
+            <p><a href="#principio">↑</a></p>
+        </div>
+
+
+
+      </div>
+
+
+
+</body>
+</html>
